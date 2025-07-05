@@ -1,0 +1,62 @@
+:root {
+  --bkg: #faf0e6; /* linen */
+  --txt: #614051; /* eggplant */
+  --accent: #8f5e77; /* lighter eggplant*/
+}
+
+* {
+  scroll-behavior: smooth;
+  scroll-padding: 1rem;
+}
+
+body {
+  background-color: var(--bkg);
+  color: var(--txt);
+  line-height: 1.5;
+  margin: auto;
+  max-width: 900px;
+  padding: 0 0.5em;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: var(--bkg);
+}
+
+header,
+footer {
+  font-family: monospace;
+}
+
+h1 {
+  text-align: center;
+  text-wrap: balance;
+}
+
+nav {
+  column-gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em 0;
+  border-bottom: 1px solid;
+}
+
+section {
+  margin: 3em 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover,
+summary:hover {
+  cursor: pointer;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer {
+  text-align: right;
+}
